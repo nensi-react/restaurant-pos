@@ -1,0 +1,32 @@
+.bill-summary,
+.bill-summary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bill-summary > div {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #6f7a8d;
+  font-size: 12px;
+}
+
+.bill-summary .total,
+.bill-total {
+  margin-top: 6px;
+  padding-top: 15px;
+  border-top: 1px dashed #dce1e9;
+  color: var(--rp-text);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.error-message {
+  padding: 12px 14px;
+  border-radius: 9px;
+  background: #fff0ed;
+  color: var(--rp-red);
+  font-size: 12px;
+}

@@ -1,0 +1,263 @@
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.primary-button {
+  min-height: 39px;
+  font-size: 11px;
+}
+
+.table-header,
+.recent-row {
+  display: grid;
+  grid-template-columns: 0.8fr 0.7fr 0.7fr 1fr 0.9fr;
+  align-items: center;
+  gap: 12px;
+  min-width: 490px;
+}
+
+.table-header {
+  padding: 13px 0;
+  border-top: 1px solid #f0f2f6;
+  border-bottom: 1px solid #edf0f5;
+  color: #a0a7b4;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.recent-row {
+  min-height: 61px;
+  border-bottom: 1px solid #f0f2f6;
+  color: #7d8798;
+  font-size: 11px;
+}
+
+.recent-row:last-child {
+  border-bottom: 0;
+}
+
+.recent-row > strong {
+  color: #2d394e;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.app-shell .main .page-content .recent-table .table-header,
+.app-shell .main .page-content .recent-table .recent-row {
+  display: grid;
+  grid-template-columns: 0.8fr 0.7fr 0.7fr 1fr 0.9fr;
+  align-items: center;
+  gap: 10px;
+  min-width: 480px;
+}
+
+.app-shell .main .page-content .recent-table .table-header {
+  padding: 12px 0;
+  border-top: 1px solid #f0f2f6;
+  border-bottom: 1px solid #edf0f5;
+  color: #a0a7b4;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.app-shell .main .page-content .recent-table .recent-row {
+  min-height: 58px;
+  border-bottom: 1px solid #f0f2f6;
+  color: #7d8798;
+  font-size: 10px;
+}
+
+.app-shell .main .page-content .recent-table .recent-row > strong {
+  color: #2d394e;
+  font-size: 10px;
+}
+
+.orders-surface {
+  width: 100%;
+  min-width: 0;
+  margin-top: 24px;
+  overflow: hidden;
+  border: 1px solid #e8edf4;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 5px 22px #24334d08;
+}
+
+.orders-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.orders-table .table-header {
+  display: grid;
+  grid-template-columns:
+    minmax(100px, 1fr)
+    minmax(90px, 0.9fr)
+    minmax(75px, 0.7fr)
+    minmax(145px, 1.3fr)
+    minmax(100px, 0.9fr)
+    minmax(105px, 0.9fr);
+  align-items: center;
+  gap: 12px;
+  min-width: 760px;
+  padding: 17px 22px;
+  border-bottom: 1px solid #edf0f5;
+  background: #fafbfd;
+}
+
+.orders-table .table-header span {
+  color: #8994a6;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.orders-table .recent-row {
+  display: grid;
+  grid-template-columns:
+    minmax(100px, 1fr)
+    minmax(90px, 0.9fr)
+    minmax(75px, 0.7fr)
+    minmax(145px, 1.3fr)
+    minmax(100px, 0.9fr)
+    minmax(105px, 0.9fr);
+  align-items: center;
+  gap: 12px;
+  min-width: 760px;
+  min-height: 76px;
+  padding: 14px 22px;
+  border-bottom: 1px solid #f0f2f6;
+  background: #fff;
+  transition: background 0.2s ease;
+}
+
+.orders-table .recent-row:last-child {
+  border-bottom: 0;
+}
+
+.orders-table .recent-row:hover {
+  background: #fffaf6;
+}
+
+.orders-table .recent-row > strong {
+  color: #29364b;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.orders-table .recent-row > span {
+  color: #6f7c90;
+  font-size: 11px;
+}
+
+.orders-table .receipt-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: fit-content;
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid #f5d7c1;
+  border-radius: 9px;
+  background: #fff5ed;
+  color: #df712c;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.orders-table .receipt-button:hover {
+  border-color: #ed792f;
+  background: #ed792f;
+  color: #fff;
+  box-shadow: 0 4px 10px #ed792f20;
+}
+
+.orders-surface .empty-illustration {
+  display: grid;
+  width: 68px;
+  height: 68px;
+  margin-bottom: 17px;
+  place-items: center;
+  border: 1px solid #ffe2cd;
+  border-radius: 19px;
+  background: #fff2e8;
+  color: #ed792f;
+}
+
+@media (max-width: 700px) {
+.orders-surface {
+    border-radius: 13px;
+  }
+
+.orders-table .table-header,
+  .orders-table .recent-row {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.receipt-modal .primary-button.no-print {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  min-height: 46px;
+  border: 0;
+  border-radius: 11px;
+  background: #f27d32;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  box-shadow: 0 5px 13px #f27d3225;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.receipt-modal .primary-button.no-print:hover {
+  transform: translateY(-1px);
+  background: #df6924;
+}
+
+.menu-form .primary-button,
+.menu-form .secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 17px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 800;
+  transition: all 0.2s ease;
+}
+
+.menu-form .primary-button {
+  border: 1px solid #ed792f;
+  background: #ed792f;
+  color: #fff;
+  box-shadow: 0 4px 10px #ed792f20;
+}
+
+.menu-form .primary-button:hover {
+  border-color: #d96624;
+  background: #d96624;
+  transform: translateY(-1px);
+}
+
+.menu-form .secondary-button {
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #657187;
+}
+
+.menu-form .secondary-button:hover {
+  background: #f5f7fb;
+}
